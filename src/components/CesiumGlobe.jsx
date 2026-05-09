@@ -48,7 +48,7 @@ export default function CesiumGlobe({ goToCity, cityPoints = [] }) {
     if (!cesiumContainer.current || viewer.current) return;
 
     try {
-      window.CESIUM_BASE_URL = import.meta.env.BASE_URL + 'cesium/';
+      window.CESIUM_BASE_URL = window.CESIUM_BASE_URL || '/cesium/';
 
       viewer.current = new Cesium.Viewer(cesiumContainer.current, {
         contextOptions: { webgl: { alpha: true } },

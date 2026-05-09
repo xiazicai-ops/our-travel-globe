@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prebuild": "cp -r node_modules/cesium/Build/Cesium/Assets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Widgets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Workers public/cesium/ && cp -r node_modules/cesium/Build/Cesium/ThirdParty public/cesium/",
+    "prebuild": "mkdir -p public/cesium && cp -r node_modules/cesium/Build/Cesium/Assets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Widgets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Workers public/cesium/ && cp -r node_modules/cesium/Build/Cesium/ThirdParty public/cesium/",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
