@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const cesiumSource = path.join(__dirname, 'node_modules/cesium/Build/Cesium');
-const cesiumDest = path.join(__dirname, 'dist/cesium');
+const cesiumDest = path.join(__dirname, 'public/cesium');
 
 const dirs = ['Assets', 'Widgets', 'Workers', 'ThirdParty'];
 
