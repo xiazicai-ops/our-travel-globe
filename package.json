@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prebuild": "mkdir -p public/cesium && cp -r node_modules/cesium/Build/Cesium/Assets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Widgets public/cesium/ && cp -r node_modules/cesium/Build/Cesium/Workers public/cesium/ && cp -r node_modules/cesium/Build/Cesium/ThirdParty public/cesium/",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir -p dist/cesium && cp -r node_modules/cesium/Build/Cesium/Assets dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/Widgets dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/Workers dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/ThirdParty dist/cesium/",
     "preview": "vite preview"
   },
   "engines": {
