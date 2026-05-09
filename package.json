@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build && mkdir -p dist/cesium && cp -r node_modules/cesium/Build/Cesium/Assets dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/Widgets dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/Workers dist/cesium/ && cp -r node_modules/cesium/Build/Cesium/ThirdParty dist/cesium/",
+    "build": "vite build && node copy-cesium.js",
     "preview": "vite preview"
   },
   "engines": {
